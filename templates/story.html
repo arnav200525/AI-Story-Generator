@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Story Theater</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+   <link rel="stylesheet" href=" {{url_for('static', filename = 'style.css')}} " />
+</head>
+<body>
+  <div class="card">
+    <h2>📖 Story Theater</h2>
+    <div id="story-output">
+      <p>{{ story }}</p>
+    </div>
+    <button onclick="window.location.href='/'">⬅ Back</button>
+  </div>
+
+</body>
+</html>
