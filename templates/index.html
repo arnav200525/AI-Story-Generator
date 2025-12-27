@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Story Generator for Kids</title>
+    <!-- <link rel="stylesheet" href="index1.html"/> -->
+    <link rel="stylesheet" href=" {{url_for('static', filename = 'style.css')}} " />
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>📖 AI Story Maker</h1>
+            <p>Build a magical story with characters, Aura, Theme and lots of Fun!</p>
+        </header>
+
+        <main class="grid"></main> <i class="el el-align-center"></i>
+
+        <section class="panel">
+            <h2>🎭 Add Your Characters</h2>
+            <div class="char-input">
+                <form action="/submit" method="post">
+                    <input type="text" style="width: 600px;" id="charText" name="char"
+                        placeholder="e.g. 🐰 Brave Rabbit" />
+                 
+            </div>
+
+            <h2>🌍 Setting</h2>
+            <select id="setting" name="selection">
+                <option value="Enchanted Forest">Enchanted Forest</option>
+                <option value="Moon Colony">Moon Colony</option>
+                <option value="Undersea Kingdom">Undersea Kingdom</option>
+                <option value="Candy Castle">Candy Castle</option>
+                <option value="Time School">Time School</option>
+            </select>
+
+            <h2>🌟Theme </h2>
+
+
+            <label>
+                <input type="radio" name="genre" value="adventure"> Adventure
+            </label>
+            <label>
+                <input type="radio" name="genre" value="horror"> Horror
+            </label>
+            <label>
+                <input type="radio" name="genre" value="Dark Humour"> Dark Humour
+            </label>
+            <label>
+                <input type="radio" name="genre" value="Childish"> Childish
+            </label>
+
+            <div class="controls">
+                <label>Age: </label>
+                <input type="number" id="age" name="age"/>
+
+                <input type="submit" value="Generate Story">
+            </div>
+            </form>
+            
+
+        </section>
+
+        </main>
+    </div>
+</body>
+
+</html>
